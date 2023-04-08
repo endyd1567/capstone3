@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+    <div class="jumbotron"> <h1>조별과제 길잡이</h1>
+        <p class="lead">프로젝트 만들기</p> <p>
+            <a class="btn btn-lg btn-secondary"
+               href="https://kauth.kakao.com/oauth/authorize?client_id=ba49e826d18cd3ac322d5ee874514f51&redirect_uri=http://localhost:8080/auth/kakao/callback&response_type=code">로그인</a>
+            <a class="btn btn-lg btn-secondary" href="/members">팀원 목록</a> </p>
+        <p class="lead">프로젝트 기능</p>
+        <p>
+            <a class="btn btn-lg btn-dark" href="/projects/new">프로젝트 등록</a>
+            <a class="btn btn-lg btn-dark" href="/projects">프로젝트 목록</a> </p>
+        <p class="lead">일정 기능</p> <p>
+            <a class="btn btn-lg btn-info" href="/order">일정 등록</a>
+            <a class="btn btn-lg btn-info" href="/orders">일정 내역</a> </p>
+    </div>
+    <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>
+
