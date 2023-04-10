@@ -18,5 +18,3 @@ logging.level:
   org.hibernate.type: trace
 
 
-ChatGPT:
-  apikey: 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

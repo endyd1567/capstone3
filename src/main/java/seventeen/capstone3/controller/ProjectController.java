@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import seventeen.capstone3.domain.Member;
 import seventeen.capstone3.domain.Project;
 import seventeen.capstone3.repository.ProjectRepository;
@@ -20,7 +21,7 @@ public class ProjectController {
 
     private final ProjectService projectService;
 
-    @GetMapping("/projects/new")
+    @RequestMapping("/projects/new")
     public String createProjectForm(){
         return "project/createProjectForm";
     }
